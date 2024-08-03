@@ -6,6 +6,48 @@ body {
   color: #434455;
 }
 
+.container {
+  max-width: 1150px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+.page-header {
+  border-bottom: 1px solid #e7e9fc;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
 .logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -17,6 +59,11 @@ body {
   text-decoration: none;
 }
 
+.header-logo {
+  padding: 24px 0;
+  margin-right: 76px;
+}
+
 .header-logo .logo-part {
   color: #2e2f42;
 }
@@ -25,7 +72,9 @@ body {
   color: #f4f4fd;
 }
 
-.menu-nav .nav-link {
+.nav-list .nav-link {
+  display: block;
+  padding: 24px 0;
   font-weight: 500;
   line-height: 150%;
   letter-spacing: 0.02em;
@@ -33,28 +82,34 @@ body {
   text-decoration: none;
 }
 
-.address {
+.contacts {
   font-style: normal;
+  margin-left: auto;
 }
 
-.address .address-link {
+.contacts-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.contacts .contacts-link {
+  display: block;
+  padding: 24px 0;
   line-height: 150%;
   letter-spacing: 0.02em;
   color: #434455;
   text-decoration: none;
 }
 
-.menu-nav .nav-link:hover,
-.menu-nav .nav-link:focus,
-.address .address-link:hover,
-.address .address-link:focus {
+.nav-list .nav-link:hover,
+.nav-list .nav-link:focus,
+.contacts-list .contacts-link:hover,
+.contacts-list .contacts-link:focus {
   color: #404bbf;
   text-decoration: underline;
 }
 
-ul {
-  list-style-type: none;
-}
 h2 {
   font-weight: 700;
   font-size: 36px;
@@ -106,8 +161,17 @@ p {
   text-transform: capitalize;
 }
 
-.feature-hide {
-  text-align: center;
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .feature-list,
