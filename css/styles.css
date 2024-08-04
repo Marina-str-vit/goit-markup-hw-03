@@ -128,8 +128,7 @@ p {
 
 .title {
   background-color: #2e2f42;
-  padding-top: 118px;
-  padding-bottom: 118px;
+  padding: 118px 0;
 }
 
 .title-head {
@@ -246,6 +245,10 @@ p {
   margin-bottom: 72px;
 }
 
+img {
+  display: block;
+}
+
 .team-item {
   border-radius: 0 0 4px 4px;
   background-color: #ffffff;
@@ -306,7 +309,7 @@ p {
 }
 
 .portfolio-item_title {
-  margin-bottom: 8;
+  margin-bottom: 8px;
 }
 
 .portfolio-text {
